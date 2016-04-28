@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DianXinHUD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXu-dZ-YCb">
+                                <rect key="frame" x="76" y="492" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N16-LY-Amg"/>
+                                    <constraint firstAttribute="width" constant="30" id="Q6f-aC-Rcc"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="beginAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33f-td-6r4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5c-0a-Rbp">
+                                <rect key="frame" x="294" y="492" width="30" height="30"/>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="beginAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U5K-NM-Cwq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAZ-6O-yKY">
+                                <rect key="frame" x="114" y="203" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dum-6R-SXa"/>
+                                </constraints>
+                                <state key="normal" title="hud显示后屏幕无响应"/>
+                                <connections>
+                                    <action selector="showMaskHud:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZV-Ll-A1n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uAZ-6O-yKY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I0K-F8-nNb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P5c-0a-Rbp" secondAttribute="bottom" constant="145" id="IgF-Br-BRJ"/>
+                            <constraint firstItem="uAZ-6O-yKY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="183" id="JIu-5P-c5F"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sXu-dZ-YCb" secondAttribute="bottom" constant="145" id="NVY-n8-qJr"/>
+                            <constraint firstAttribute="trailing" secondItem="P5c-0a-Rbp" secondAttribute="trailing" constant="51" id="P1O-Oy-e0B"/>
+                            <constraint firstItem="sXu-dZ-YCb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="76" id="hgT-dJ-IFe"/>
+                            <constraint firstItem="uAZ-6O-yKY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="qx7-0u-sTl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qx7-0u-sTl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258.5" y="430.5"/>
+        </scene>
+    </scenes>
+</document>
